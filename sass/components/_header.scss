@@ -2,20 +2,35 @@
 
 
 .header {
+    
     border-bottom: 1px solid #ececec;
-    display: flex;
     padding-top: 24px;
     padding-bottom: 25px;
-    align-items: center;
-    
+        
     .container {
         background-color: #ffffff;
-        display: flex;
-        align-items: center;
         text-decoration: none;
     }
 
+
+@media screen and (max-width: 479px) {
+    display: flex;
+    justify-content: space-around;
+
 }
+}
+
+@media screen and (max-width: 479px) {
+    .header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 23px;
+    width: 479px;
+ }
+
+}
+
+
 
 .menu__logo {
     margin-right: 93px;
@@ -32,16 +47,27 @@
         color: #2196f3;
         margin-right: 0;
     }
+
+@media screen and (max-width: 479px) {
+    margin-right: 0;
+}
+
+}
+
+.menu-list, .list-contacts {
+    @media screen and (max-width: 479px) {
+        display: none;
+    }
 }
 
 .menu-list,
 .menu {
     height: 100%;
     list-style: none;
-    display: flex;
-    align-items: center;
-
+    
 }
+
+
 
 .list {
     text-decoration: none;
@@ -50,10 +76,8 @@
 }
 
 .menu__list {
-
-    padding-left: 0;  
-    
-    
+    padding-left: 0;     
+        
 }
 
 .menu__item {
@@ -62,8 +86,7 @@
     font-size: $min-font-size;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: $primary-color;
-    display: flex;
+    color: $primary-color;    
     text-decoration: none;
 }
 
@@ -94,9 +117,7 @@
 }
 
 .list-contacts {
-    padding-left: 0;
-    display: flex;
-    align-items: center;
+    padding-left: 0;    
     margin-left: auto;
 }
 
@@ -118,11 +139,6 @@
         }
 }
 
-.list-contacts__email--flex-center,
-.list-contacts__phone--flex-center {
-    display: flex;
-    align-items: center;
-}
 
 .list-contacts__email {
     font-family: $primary-font;
@@ -175,3 +191,24 @@
         color: #2196f3;
     }
 }
+
+.menu-mobile {    
+        display: none;
+}
+
+.open-menu-mobile {
+    padding: 0px;
+    background-color: #ffffff;
+    border: none;
+    
+
+    @media screen and (min-width: 480px) {
+            display: none;
+        }
+
+                @media screen and (max-width: 479px) {
+                    margin-left: auto;
+                }
+
+}
+    

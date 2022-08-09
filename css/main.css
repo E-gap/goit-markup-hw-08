@@ -77,18 +77,28 @@ button {
 
 .header {
   border-bottom: 1px solid #ececec;
-  display: flex;
   padding-top: 24px;
   padding-bottom: 25px;
-  align-items: center;
 }
 .header .container {
   background-color: #ffffff;
-  display: flex;
-  align-items: center;
   text-decoration: none;
 }
+@media screen and (max-width: 479px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 
+@media screen and (max-width: 479px) {
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 23px;
+    width: 479px;
+  }
+}
 .menu__logo {
   margin-right: 93px;
   font-family: "raleway";
@@ -104,13 +114,22 @@ button {
   color: #2196f3;
   margin-right: 0;
 }
+@media screen and (max-width: 479px) {
+  .menu__logo {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .menu-list, .list-contacts {
+    display: none;
+  }
+}
 
 .menu-list,
 .menu {
   height: 100%;
   list-style: none;
-  display: flex;
-  align-items: center;
 }
 
 .list {
@@ -130,7 +149,6 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
-  display: flex;
   text-decoration: none;
 }
 
@@ -161,8 +179,6 @@ button {
 
 .list-contacts {
   padding-left: 0;
-  display: flex;
-  align-items: center;
   margin-left: auto;
 }
 
@@ -179,12 +195,6 @@ button {
 }
 .list-contacts__phone:hover .list-contacts__smartphone-icon, .list-contacts__phone:focus .list-contacts__smartphone-icon {
   fill: #2196f3;
-}
-
-.list-contacts__email--flex-center,
-.list-contacts__phone--flex-center {
-  display: flex;
-  align-items: center;
 }
 
 .list-contacts__email {
@@ -232,6 +242,26 @@ button {
 }
 .current-1 .menu__current {
   color: #2196f3;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.open-menu-mobile {
+  padding: 0px;
+  background-color: #ffffff;
+  border: none;
+}
+@media screen and (min-width: 480px) {
+  .open-menu-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  .open-menu-mobile {
+    margin-left: auto;
+  }
 }
 
 .content {
