@@ -1,0 +1,48 @@
+.list-contacts__email,
+.menu__link,
+.menu__item,
+.list-contacts__phone,
+.social-nets,
+.clients__logo,
+.social-nets__link,
+.address__email,
+.address__street,
+.menu__studio,
+.menu__portfolio,
+.menu__contacts,
+.filters__button {
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-contacts__envelope-icon,
+.social-nets,
+.social-nets__instagram,
+.social-nets__twitter,
+.social-nets__facebook,
+.social-nets__linkedin,
+.clients__logo-1,
+.clients__logo-2,
+.clients__logo-3,
+.clients__logo-4,
+.clients__logo-5,
+.clients__logo-6,
+.clients__logo,
+.social-nets__link svg,
+.list-contacts__email,
+.modal__icon--person-black,
+.modal__icon--phone-black,
+.modal__icon--email-black {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-nets,
+.social-nets__link,
+.filters__button {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filters__item,
+.work-list__item--border {
+    transition: shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

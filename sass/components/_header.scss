@@ -1,0 +1,177 @@
+
+
+
+.header {
+    border-bottom: 1px solid #ececec;
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    align-items: center;
+    
+    .container {
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+}
+
+.menu__logo {
+    margin-right: 93px;
+    font-family: 'raleway';
+    font-weight: $bold-font;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $primary-color;
+    display: inline-block;
+    text-decoration: none;
+
+    &--color {
+        color: #2196f3;
+        margin-right: 0;
+    }
+}
+
+.menu-list,
+.menu {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.list {
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu__list {
+
+    padding-left: 0;  
+    
+    
+}
+
+.menu__item {
+    height: 100%;
+    font-weight: $medium-font;
+    font-size: $min-font-size;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $primary-color;
+    display: flex;
+    text-decoration: none;
+}
+
+.menu__studio,
+.menu__portfolio {
+    margin-right: 50px;
+    padding-left: 0;
+
+&:hover, &:focus {
+        color: #2196f3;
+    }
+}
+
+.menu__contacts:hover,
+.menu__contacts:focus {
+    color: #2196f3;
+}
+
+.menu__link {
+    color: $primary-color;
+    text-decoration: none;
+    font-family: $primary-font;
+
+    &:hover,
+    &:focus {
+        color: #2196f3;
+    }
+}
+
+.list-contacts {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.list-contacts__envelope-icon {
+    margin-right: 10px;
+    fill: #2196f3;
+
+    .list-contacts__email:hover &,
+    .list-contacts__email:focus &  {
+        fill: #2196f3;
+    }
+}
+
+.list-contacts__smartphone-icon {
+    margin-right: 10px;
+    .list-contacts__phone:hover &,
+    .list-contacts__phone:focus & {
+            fill: #2196f3;
+        }
+}
+
+.list-contacts__email--flex-center,
+.list-contacts__phone--flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.list-contacts__email {
+    font-family: $primary-font;
+    font-weight: $medium-font;
+    font-size: $min-font-size;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+    text-decoration: none;
+    margin-right: 30px;
+
+    &:hover, &:focus {
+        color: #2196f3;
+    }
+
+}
+
+.list-contacts__phone {
+    font-family: $primary-font;
+    font-weight: $medium-font;
+    font-size: $min-font-size;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $secondary-color;
+    text-decoration: none;
+
+    &:hover, &:focus {
+            color: #2196f3;
+        }
+}
+
+.current-1 {
+    height: 100%;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        display: inline-block;
+        content: "";
+        height: 4px;
+        width: 100%;
+        background-color: #2196f3;
+        border-radius: 2px;
+        bottom: 0;
+        left: 0;
+        transform: translatey(34px);
+    }
+
+    & .menu__current {
+        color: #2196f3;
+    }
+}

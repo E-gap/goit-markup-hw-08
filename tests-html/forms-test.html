@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.css">
+    <link rel="stylesheet" href="./css/test.css" />
+</head>
+<body>
+    <form class="js-speaker-form">
+        <input type="text" name="user-name">
+    </form>
+
+    
+<script>
+    (() => {
+        document
+        .querySelector('.js-speaker-form')
+        .addEventListener('submit', e=> {
+            e.preventDefault();
+            new FormData(e.currentTarget).forEach((value, name) =>
+            console.log('${name}: ${value}'),
+        );
+        });
+    })();
+    </script>
+    <script src="./js/modal.js"></script>
+</body>
+</html>

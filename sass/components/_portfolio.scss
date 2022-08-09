@@ -1,0 +1,116 @@
+.content {
+
+    font-family: $primary-font;
+    color: $primary-color;
+    font-size: $min-font-size;
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.work-examples {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+.filters {
+
+    font-weight: $medium-font;
+    font-size: $normal-font-size;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    list-style: none;
+    color: $primary-color;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-left: 0;
+}
+
+.filters__item {
+    font-weight: $medium-font;
+    font-size: $normal-font-size;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-color;
+
+    &:not(:last-child) {
+    margin-right: 8px;
+    }
+
+    &:hover {
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    &--border {
+        border-bottom: 1px solid #eeeeee;
+        border-right: 1px solid #eeeeee;
+        border-left: 1px solid #eeeeee;
+        flex-basis: calc((100% - 60px)/3);
+        max-width: 370px;
+
+        &:hover, &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+    }
+    
+}
+
+.filters__button {
+    font-weight: $medium-font;
+    font-size: $normal-font-size;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-color;
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
+
+    &:hover, &:focus {
+        color: $thirty-color;
+        background-color: #2196f3;
+    }
+}
+
+.work-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 0;
+}
+
+.work-name {
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.work-name__title {
+    width: 322px;
+    font-weight: $bold-font;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: $primary-color;
+    margin-bottom: 4px;
+}
+
+.work-name__text {
+
+    font-weight: $normal-font;
+    font-size: $normal-font-size;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+}

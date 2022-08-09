@@ -1,0 +1,98 @@
+
+
+.team {
+    background: #f5f4fa;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team__title {
+
+    font-weight: $bold-font;
+    font-size: $high-font-size;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.team__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
+}
+
+.team__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+}
+
+.team-name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-name__title {
+    font-weight: $medium-font;
+    font-size: $normal-font-size;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+.team-name__text {
+    font-weight: $normal-font;
+    font-size: $normal-font-size;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+    margin-bottom: 16px;
+}
+.social-nets {
+    display: flex;
+    list-style: none;
+    padding-left: 32px;
+    padding-right: 30px;
+    justify-content: space-between;
+}
+
+.social-nets__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ffffff;
+
+    &:hover, &:focus {
+        background-color: #2196f3;
+    }
+}
+
+.social-nets__instagram,
+.social-nets__twitter,
+.social-nets__facebook,
+.social-nets__linkedin,
+.clients__logo-1,
+.clients__logo-2,
+.clients__logo-3,
+.clients__logo-4,
+.clients__logo-5,
+.clients__logo-6 {
+    fill: #afb1b8;
+}
+
+.social-nets__link:hover .social-nets__instagram,
+.social-nets__link:hover .social-nets__twitter,
+.social-nets__link:hover .social-nets__facebook,
+.social-nets__link:hover .social-nets__linkedin,
+.social-nets__link:focus .social-nets__instagram,
+.social-nets__link:focus .social-nets__twitter,
+.social-nets__link:focus .social-nets__facebook,
+.social-nets__link:focus .social-nets__linkedin {
+    fill: #ffffff;
+}

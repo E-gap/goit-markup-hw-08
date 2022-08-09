@@ -1,0 +1,53 @@
+
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients__title {
+
+    font-weight: $bold-font;
+    font-size: $high-font-size;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.clients__list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-between;
+}
+
+.clients__logo {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover, &:focus {
+        border: 1px solid rgba(33, 150, 243, 1);
+    }
+}
+
+.clients__logo:hover .clients__logo-1,
+.clients__logo:hover .clients__logo-2,
+.clients__logo:hover .clients__logo-3,
+.clients__logo:hover .clients__logo-4,
+.clients__logo:hover .clients__logo-5,
+.clients__logo:hover .clients__logo-6,
+.clients__logo:focus .clients__logo-1,
+.clients__logo:focus .clients__logo-2,
+.clients__logo:focus .clients__logo-3,
+.clients__logo:focus .clients__logo-4,
+.clients__logo:focus .clients__logo-5,
+.clients__logo:focus .clients__logo-6 {
+    fill: #2196f3;
+}
