@@ -84,19 +84,19 @@ button {
   background-color: #ffffff;
   text-decoration: none;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .header {
     display: flex;
     justify-content: space-around;
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .header .container {
     display: flex;
     justify-content: space-between;
     padding-right: 23px;
-    width: 479px;
+    width: 480px;
   }
 }
 .menu__logo {
@@ -114,13 +114,13 @@ button {
   color: #2196f3;
   margin-right: 0;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .menu__logo {
     margin-right: 0;
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .menu-list, .list-contacts {
     display: none;
   }
@@ -253,12 +253,12 @@ button {
   background-color: #ffffff;
   border: none;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .open-menu-mobile {
     display: none;
   }
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .open-menu-mobile {
     margin-left: auto;
   }
@@ -287,16 +287,30 @@ button {
   margin-bottom: 0;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/headimg.jpg");
   background-size: cover;
-  background-position: center;
+}
+@media screen and (max-width: 480px) {
+  .main-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-mobile.jpg");
+    max-width: 480px;
+    height: 400px;
+  }
 }
 .main-section .container {
   padding-top: 200px;
   text-align: center;
   padding-bottom: 200px;
 }
+@media screen and (max-width: 480px) {
+  .main-section .container {
+    max-width: 480px;
+    padding-top: 118px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 
 .main-section__title {
-  width: 696px;
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -307,6 +321,12 @@ button {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 480px) {
+  .main-section__title {
+    font-size: 26px;
+    line-height: 1.62;
+  }
 }
 
 .main-section__button {
