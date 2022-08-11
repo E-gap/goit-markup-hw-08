@@ -4,6 +4,8 @@
     color: $primary-color;
     font-size: $min-font-size;
     text-decoration: none;
+
+    
 }
 
 .container {
@@ -11,12 +13,28 @@
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media screen and (max-width: 480px) {
+                
+        width: 100%;
+            
+        }
+
 }
 
 
 .work-examples {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @media screen and (max-width: 480px) {
+    
+    
+            padding-top: 60px;
+            padding-bottom: 60px;
+    
+        }
+
 
 }
 
@@ -29,10 +47,21 @@
     letter-spacing: 0.03em;
     list-style: none;
     color: $primary-color;
-    display: flex;
+    display: flex;    
     justify-content: center;
     margin-bottom: 50px;
     padding-left: 0;
+
+@media screen and (max-width: 480px) {
+
+        
+        flex-wrap: wrap;
+        justify-content:left;
+        margin-bottom: 40px;
+        
+
+    }
+
 }
 
 .filters__item {
@@ -63,6 +92,14 @@
         }
     }
     
+        @media screen and (max-width: 480px) {   
+              
+           
+            margin-bottom: 15px;
+    
+        }
+
+
 }
 
 .filters__button {
@@ -82,18 +119,47 @@
     }
 }
 
+.work-list__item {
+    display: block;
+    
+}
+
 .work-list {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* gap: 30px; */
     padding-left: 0;
+    display: block;
+    
+}
+
+.work__img {
+    width: 370px;
+    height: 294px;
+    display: block;
+
+    @media screen and (max-width: 480px) {    
+    
+            width: 100%;
+    
+        }
 }
 
 .work-name {
     padding-left: 24px;
     padding-top: 24px;
     padding-bottom: 24px;
+    
+
+    @media screen and (max-width: 480px) {
+    
+    
+            padding-left: 24px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+    
+        }
 }
 
 .work-name__title {
@@ -114,3 +180,14 @@
     letter-spacing: 0.03em;
     color: $secondary-color;
 }
+
+.work__link {
+border: 1px solid #EEEEEE;
+display: block;
+
+}
+
+.work-list__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+

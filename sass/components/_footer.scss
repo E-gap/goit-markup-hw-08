@@ -1,27 +1,35 @@
+@media screen and (max-width: 480px) {
 
+    .footer .container {
+        width: 100%;
+    }
+}
 
 .footer {
 
     background: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
+       
 
 }
 
-.address-join {
+/* .address-join {
     display: flex;
     align-items: baseline;
-}
+} */
 
 .footer__address {
-    margin-right: 70px;
+    /* margin-right: 70px; */
+    text-align: center;
 }
 .footer__logo {
     font-family: 'raleway';
     font-weight: $bold-font;
-    font-size: 26px;
-    line-height: 1.19;
+    /* font-size: 26px;
+    line-height: 1.19; */
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: $thirty-color;
     text-decoration: none;
@@ -39,7 +47,14 @@
     padding-left: 0;
     list-style: none;
     font-style: normal;
+
+@media screen and (max-width: 480px) {
+
+        margin-bottom: 60px;
+    }
+    
 }
+
 .address__street {
 
     font-weight: $normal-font;
@@ -81,7 +96,9 @@
 }
 
 .join {
-    margin-right: 93px;
+    /* margin-right: 93px; */
+    text-align: center;
+    
 }
 
 .join__title,
@@ -93,6 +110,7 @@
     text-transform: uppercase;
     letter-spacing: 0.03em;
     margin-bottom: 20px;   
+    text-align: center;
 
 }
 
@@ -125,16 +143,23 @@
 .subscribe {
     position: relative;
     align-items: center;
+    
 }
 
 .subscribe__form {
     position: relative;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 }
 
+.subscribe__btn {
+    margin: 0 auto;
+}
+
+
 .subscribe__input {
-    width: 358px;
+    /* width: 358px; */
+    width: 100%;
     height: 50px;
     background-color: #2f303a;
     margin-right: 12px;
@@ -148,6 +173,11 @@
     font-weight: $normal-font;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (max-width: 480px) {
+    
+            margin-bottom: 20px;
+        }
 
     &::placeholder {
         font-size: $normal-font-size;
@@ -164,8 +194,16 @@
     display: flex;
     padding-left: 0;
     padding-right: 0;
+    justify-content: center;
+
+
+    @media screen and (max-width: 480px) {
+    
+            margin-bottom: 60px;
+        }
 
 }
+
 .nets__link {
     width: 44px;
     height: 44px;
