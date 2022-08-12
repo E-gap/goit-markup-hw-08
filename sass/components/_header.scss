@@ -1,66 +1,94 @@
 
 
-
 .header {
     position: relative;
     border-bottom: 1px solid #ececec;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    /* padding-top: 24px;
+    padding-bottom: 25px; */
+    display: flex;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    padding-top: 16px;
+    padding-bottom: 16px;
         
     .container {
         background-color: #ffffff;
         text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 22px;
+        width: 100%; 
+
+        @media screen and (min-width: 480px) {
+            width: 480px
+               }      
+       
     }
+}
 
-
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 479px) {
     display: flex;
     justify-content: space-around;
     padding-top: 16px;
-        padding-bottom: 16px;
-
+    padding-bottom: 16px;
 }
-}
+ */
 
-@media screen and (max-width: 480px) {
+
+
+/* @media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+    }
+} */
+
+/* @media screen and (max-width: 479px) {
     .header .container {
     display: flex;
     justify-content: space-between;
     padding-right: 23px;
-    width: 480px;
- }
+    width: 100%;
+ } */
 
-}
+ /* @media screen and (min-width: 480px) {
+     .header .container {
+         
+         width: 480px;
+     }
 
+} */
 
 
 .menu__logo {
-    margin-right: 93px;
+    /* margin-right: 93px; */
     font-family: 'raleway';
     font-weight: $bold-font;
-    font-size: 26px;
-    line-height: 1.19;
+    /* font-size: 26px;
+    line-height: 1.19; */
     letter-spacing: 0.03em;
     color: $primary-color;
     display: inline-block;
     text-decoration: none;
+    margin-right: 0;
+    font-size: 24px;
+    line-height: 1.17;
 
     &--color {
         color: #2196f3;
         margin-right: 0;
     }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 479px) {
     margin-right: 0;
     font-size: 24px;
-        line-height: 1.17;
+    line-height: 1.17;
 
-}
+} */
 
 }
 
 .menu-list, .list-contacts {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 }
@@ -291,14 +319,15 @@ font-weight: $medium-font;
     background-color: #ffffff;
     border: none;
     
+    
 
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 768px) {
             display: none;
         }
 
-                @media screen and (max-width: 480px) {
-                    margin-left: auto;
-                }
+    @media screen and (max-width: 767px) {
+            margin-left: auto;
+        }
 
 }
 
