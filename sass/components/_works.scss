@@ -1,14 +1,12 @@
 
-@media screen and (max-width: 1200px) {
-
-    .works .container {
-        width: 100%;
-    }
+@media screen and (max-width: 1199px) {
 
     .works {
-        display: none;
-    }
+            display: none;
+        }
+           
 }
+
 
 
 .works {
@@ -30,10 +28,10 @@
 
 
 .works__list {
-    /* display: flex;
-    align-items: center; */
+    display: flex;
+    align-items: center;
     list-style: none;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     padding-left: 0;
 }
 

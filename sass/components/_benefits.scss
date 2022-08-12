@@ -1,56 +1,75 @@
 
-/* @media screen and (max-width: 479px) {
+@media screen and (min-width: 1200px) {
 
    .benefits .container {
-    width: 100%;
+    width: 1200px;
    }
-} */
+} 
 
 .benefits {
-    /* padding-top: 94px;
-    padding-bottom: 94px; */
+   
 padding-top: 60px;
-    padding-bottom: 60px;
+padding-bottom: 60px;
 
-/* @media screen and (max-width: 479px) {
-
-        padding-top: 60px;
-        padding-bottom: 60px;
-
-    } */
+@media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
 
 }
 
 .benefits__list {
 
-    list-style: none;
-   /*  display: flex;
-    justify-content: space-between; */
+    list-style: none;    
     padding-left: 0;
 
-    /* @media screen and (max-width: 479px) {
     
-            max-width: 100%;
+
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+@media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     
-        } */
+
+}
+
+}
+
+.benefits__item {
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 1*30px)/2);
+        &:not(:nth-last-child(-n+2)) {
+        margin-bottom: 30px;            
+                }                
+        }
+
+     @media screen and (min-width: 1200px) {                    
+        
+        flex-basis: calc((100% - 3*30px)/4);        
+        &:not(:nth-last-child(-n+2)) {
+        margin-bottom: 0px;
+                 }
+        }
+
 
 }
 
 .benefits__icon {
     background-color: #f5f4fa;
-    /* width: 270px; */
     height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
     border-radius: 4px;
-
-@media screen and (max-width: 479px) {
-
-        /* max-width: 479px; */
-
-    }
 
 }
 
@@ -60,18 +79,17 @@ padding-top: 60px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    /* width: 270px; */
     margin-bottom: 10px;
     text-align: center;
-
-    /* @media screen and (max-width: 479px) {
     
-            text-align: center;
-            width: 100%;
-    
-        } */
 
+    @media screen and (min-width: 1200px) {
+        
+        text-align: left;
+        }
 }
+
+
 
 .benefits__text {
 
@@ -79,8 +97,7 @@ padding-top: 60px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $secondary-color;
-   /*  width: 270px; */
-    margin-bottom: 30px;
+    text-align: left;
 
     &.benefits__text--margin-bottom-o {
             margin-bottom: 0px;

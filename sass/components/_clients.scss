@@ -1,45 +1,35 @@
 
 
-/* @media screen and (max-width: 479px) {
-
-    .clients .container {
-            width: 100%;
-        }
-
-} */
 
 .clients {
-   /*  padding-top: 94px;
-    padding-bottom: 94px; */
+   
     padding-top: 60px;
     padding-bottom: 60px;
 
-   /*  @media screen and (max-width: 479px) {
+    @media screen and (min-width: 1200px) {
     
-            padding-top: 60px;
-            padding-bottom: 60px;
+            padding-top: 94px;
+            padding-bottom: 94px;
     
-        } */
+        }
 
 }
 
 .clients__title {
 
-    font-weight: $bold-font;
-    /* font-size: $high-font-size; */
+    font-weight: $bold-font;   
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
-    /* margin-bottom: 50px; */
+    letter-spacing: 0.03em;   
     font-size: 28px;
     margin-bottom: 30px;
 
-/* @media screen and (max-width: 479px) {
+@media screen and (min-width: 1200px) {
 
-        font-size: 28px;
-        margin-bottom: 30px;
+        font-size: $high-font-size;
+        margin-bottom: 50px;
 
-    } */
+    } 
 
 }
 
@@ -52,29 +42,41 @@
     flex-wrap: wrap;
    
       
-    /* @media screen and (max-width: 479px) {
+    @media screen and (min-width: 1200px) {
     
-            flex-wrap: wrap;
+        flex-wrap: nowrap;
     
-        } */
+     }
 }
 
 .clients__item {
 height: 92px;
 flex-basis: calc((100% - 2*15px)/2);
 
+@media screen and (max-width: 767px) {
+
 &:not(:nth-last-child(-n+2)) {
-        margin-bottom: 30px;
-
-    }
-
-/* @media screen and (max-width: 479px) {
-
-    &:not(:nth-last-child(-n+2)) {
     margin-bottom: 30px;
 
     }
-} */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    &:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
+    }
+
+    flex-basis: calc((100% - 2*30px)/3);
+
+    }
+
+@media screen and (min-width: 1200px) {
+
+    flex-basis: calc((100% - 5*30px)/6);
+
+}
+
 }
 
 .clients__logo {
@@ -84,20 +86,12 @@ flex-basis: calc((100% - 2*15px)/2);
     border-radius: 4px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     
-    
-    /* @media screen and (max-width: 479px) {
-    
-            height: 92px;               
-    
-        } */
-    
+        
     &:hover, &:focus {
         border: 1px solid rgba(33, 150, 243, 1);
     }
-
-
 
 }
 
