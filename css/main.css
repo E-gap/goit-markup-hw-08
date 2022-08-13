@@ -1295,11 +1295,6 @@ button {
     padding-top: 0px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .backdrop {
-    padding-top: 0px;
-  }
-}
 
 .backdrop.is-hidden {
   opacity: 0;
