@@ -49,25 +49,25 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-            <button type="button" class="open-menu-mobile">
+            <button type="button" class="open-menu-mobile" menu-mobile-open>
                 <svg class="open-menu-mobile__icon" width="24px" height="16px">
                     <use href="./images/icons.svg#icon-menu"></use>
                 </svg>
             </button>
             </div>
-            <div class="menu-mobile">
-                <button class="close-menu-mobile" data-modal-close>
-                    <svg class="close-menu-mobile__icon" width="19px" height="19px">
+            <div class="menu-mobile is-invisible" menu-mobile>
+                <button class="close-menu-mobile" menu-mobile-close>
+                    <svg class="close-menu-mobile__icon" width="40px" height="40px">
                         <use href="./images/icons.svg#close-backdrop"></use>
                     </svg>
                 </button>
                 <div class="menu-mobile__menu">
                     <ul class="list menu-mobile__list">
-                        <li class="menu-mobile__item menu-mobile__studio menu-mobile__current-1 current-1">
-                            <a class="menu-mobile__link menu-mobile__current menu__current" href="#">Студия</a>
+                        <li class="menu-mobile__item menu-mobile__studio">
+                            <a class="menu-mobile__link" href="./index.html">Студия</a>
                         </li>
-                        <li class="menu-mobile__item menu-mobile__portfolio">
-                            <a class="menu-mobile__link" href="./portfolio.html">Портфолио</a>
+                        <li class="menu-mobile__item menu-mobile__portfolio menu-mobile__current-1 current-1">
+                            <a class="menu-mobile__link menu-mobile__current menu__current" href="./portfolio.html">Портфолио</a>
                         </li>
                         <li class="menu-mobile__item menu-mobile__contacts">
                             <a class="menu-mobile__link" href="#">Контакты</a>
@@ -326,6 +326,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu-modal.js"></script>
 </body>
 
 </html>

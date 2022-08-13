@@ -48,14 +48,14 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-            <button type="button" class="open-menu-mobile">
+            <button type="button" class="open-menu-mobile" menu-mobile-open>
                 <svg class="open-menu-mobile__icon" width="24px" height="16px">
                     <use href="./images/icons.svg#icon-menu"></use>
                 </svg>
             </button>            
         </div>
-        <div class="menu-mobile">
-            <button class="close-menu-mobile" data-modal-close>
+        <div class="menu-mobile is-invisible" menu-mobile>
+            <button class="close-menu-mobile" menu-mobile-close>
                 <svg class="close-menu-mobile__icon" width="40px" height="40px">
                     <use href="./images/icons.svg#close-backdrop"></use>
                 </svg>
@@ -500,6 +500,8 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu-modal.js"></script>
+
 </body>
 
 </html>
