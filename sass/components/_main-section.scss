@@ -28,29 +28,49 @@
 
 .main-section {    
 
+    
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(47, 48, 58, 0.4);
     margin-bottom: 0;    
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-mobile.jpg");
-    min-height: 400px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-mobile.jpg");      
     padding-top: 118px; 
     align-items: center;   
    
-    @media screen and (min-width: 768px) {
-            
-                    
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-tablet.jpg");
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-mobile@2x.jpg");
+    }
 
-        }
+    
+
+
+    @media screen and (min-width: 768px) {            
+            
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-tablet.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-tablet@2x.jpg");
+    }
+
+    }
 
     @media screen and (min-width: 1200px) {
-                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-desktop.jpg");
-                    min-height: 600px;
-                    padding-top: 200px;
-        
-                }
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-desktop.jpg");
+            height: 600px;
+            padding-top: 200px;
+
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-desktop@2x.jpg");
+            }                            
+            }
 
        .container {        
         text-align: center;    
