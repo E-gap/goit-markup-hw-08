@@ -44,6 +44,10 @@ padding-bottom: 60px;
 
 .benefits__item {
 
+    &:not(:nth-last-child) {
+        margin-bottom: 30px;
+    }
+
     @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 1*30px)/2);
         &:not(:nth-last-child(-n+2)) {
@@ -58,7 +62,6 @@ padding-bottom: 60px;
         margin-bottom: 0px;
                  }
         }
-
 
 }
 
@@ -83,7 +86,7 @@ padding-bottom: 60px;
     text-align: center;
     
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         
         text-align: left;
         }
