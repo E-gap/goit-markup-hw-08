@@ -46,7 +46,7 @@
     }
 
     
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1200px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-desktop.jpg");
     height: 600px;
     padding-top: 200px;
@@ -58,7 +58,7 @@
     }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {    
+    @media screen and (min-width: 768px) {    
 
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-tablet.jpg");
