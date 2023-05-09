@@ -130,5 +130,12 @@ function selectColor(event) {
   output.style.color = selectedColor;
 } */
 
-const result = _.add(2, 3);
-console.log(result); // 5
+/* const result = _.add(2, 3);
+console.log(result); // 5 */
+
+
+/* console.log(localStorage);
+
+localStorage.setItem('avto', "bmw");
+
+console.log(localStorage.getItem('avto')); */

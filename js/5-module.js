@@ -299,6 +299,9 @@ mango.email = "mango@supermail.com";
 console.log(mango.ppp); // mango@superm
 console.log(mango); */
 
+/* console.log('ddfdfdfd');
+
+ */
 
 
 

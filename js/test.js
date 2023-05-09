@@ -99,7 +99,7 @@ while (a<10) {
    console.log(a);
     a+=2;
 } */
- 
+
 /* let counter = 0;
 
 while (counter < 10) {
@@ -152,12 +152,10 @@ for (let i = 0; i <= target; i += 1) {
 
 console.log(sum); */
 
-
 /* const max = 10;
 for (let i = 0; i < max; i += 1) {
   console.log(`${max} % ${i} = `, max % i);
 } */
-
 
 /* for (let i = 0; i <= 5; i += 1) {
   console.log(i);
@@ -223,7 +221,6 @@ for (let i = 1; i <= 8; i += 1) {
 
     console.log(a);
 } */
-
 
 /* const a = "# # # #";
 const b = " # # # #";
@@ -452,7 +449,6 @@ a.xxx = "555";
 
 console.log */
 
-
 /* function checkPassword(password) {
   const ADMIN_PASSWORD = "jqueryismyjam";
   let message;
@@ -573,24 +569,24 @@ if (i % 2 === 0) {
 console.log(a);
  i += 1;
 }    */
- 
+
 /* 
 function calculateTotal(number) {
   // Change code below this line
   let total = 0;
   for (let i = 0; i <= number; i += 1) {
     /* console.log(i); */
-    /* total += i; */
-  /* } */
-    
- /*  return total; */
+/* total += i; */
+/* } */
 
-    /*  for (let i = 0; i <= 20; i += 5) {
+/*  return total; */
+
+/*  for (let i = 0; i <= 20; i += 5) {
      console.log(i);
    } */
 
-    // Change code above this line
-  
+// Change code above this line
+
 /* } */
 
 /* console.log(calculateTotal(7));  */
@@ -603,14 +599,14 @@ for (let i = 0; i<=(fruits.length-1); i+=1) { // Change this line
 } */
 
 /* function calculateTotalPrice(order) { */
-  /* let total = 0; */
-  // Change code below this line
+/* let total = 0; */
+// Change code below this line
 /* for (let i=0; i < order.length; i+=1) {
   console.log(order[i]); */
-  /* total += i; */
+/* total += i; */
 /* } */
-  // Change code above this line
-  /* return total; */
+// Change code above this line
+/* return total; */
 /* } */
 
 /* calculateTotalPrice([12, 85, 37, 4]); */
@@ -645,12 +641,14 @@ console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); */
   // Change code below this line
   for (let i = min; i <= max; i += 1) {
     /* console.log([i]); */
-    /* numbers.push(i); */
-    
-  /* } */
+/* numbers.push(i); */
 
-  // Change code above this line
-  /* return numbers; */
+/* } */
+
+// Change code above this line
+/* return numbers; */
 /* } */
 
 /* console.log(createArrayOfNumbers(3, 10));  */
+
+console.log("dfdfdfdfdffdfd");
